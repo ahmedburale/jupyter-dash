@@ -21,3 +21,12 @@ print(df[df['age']>30])
 
 #Select by Label
 print(df.loc[:, 'name'])
+
+print(df.loc[:, ['age', 'Occupation']])
+
+# Modifiying an Existing Dataframe
+df['age'] = 19
+print(df)
+
+df.loc[1:,'age'] = 16
+print(df)
